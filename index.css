@@ -14,4 +14,21 @@ a {
     color: inherit;
 }
 
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-inline: 40px;
+    position: sticky;
+}
+
+#forside {
+    height: 90vh;
+    background-image: url(media/natur1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
