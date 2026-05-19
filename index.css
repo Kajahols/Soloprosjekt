@@ -85,25 +85,48 @@ nav li:hover {
 }
 
 .overskrift {
-    width: 550px;
+    width: 600px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
     color: white;
     padding: 20px;
     border-radius: 30px;
     margin-left: -300px;
+    
 
 }
 
-.overskrift {
+.overskrift h1{
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.overskrift p {
+    font-size: 20px;
+}
+
+.overskrift p span {
+    color: rgb(211, 43, 43);
+    font-weight: 700;
     
 }
 
 #norsk_natur {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    
 }
