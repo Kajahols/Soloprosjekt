@@ -14,6 +14,11 @@ a {
     color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
+
 body {
     background-attachment: fixed;
     background-image: url(media/natur1.jpg);
@@ -26,9 +31,14 @@ header {
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding-inline: 40px;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
 }
 
 nav ul {
@@ -36,16 +46,29 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     width: 500px;
-    
+
 }
 
 #forside {
     height: 90vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overskrift {
+    width: 550px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+
 }
 
 #norsk_natur {
     height: 100vh;
 }
-
-
