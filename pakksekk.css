@@ -25,6 +25,22 @@ main img {
     display: none;
 }
 
+.pakk {
+    display: none;
+}
+
+.pakk input {
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.pakk p {
+    border: 2px white solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 90px;
+}
 button {
     padding: 10px;
     width: 150px;
