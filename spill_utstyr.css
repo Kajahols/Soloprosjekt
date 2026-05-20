@@ -1,0 +1,22 @@
+body {
+    background-image: url(media/tur.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    gap: 20px;
+
+}
+
+main img {
+    width: 350px;
+}
