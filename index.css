@@ -124,7 +124,7 @@ nav li:hover {
     align-items: center;
 }
 
-.container {
+.container1 {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -137,7 +137,7 @@ nav li:hover {
 
 }
 
-.container h2 {
+.container1 h2 {
     color: white;
     font-size: 40px;
     text-transform: uppercase;
@@ -182,4 +182,9 @@ nav li:hover {
 
 .b1 {
     padding-left: 30px;
+}
+
+#tips {
+    background-color: white;
+    min-height: 100vh;
 }
