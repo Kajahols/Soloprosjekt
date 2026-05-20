@@ -78,7 +78,7 @@ nav li:hover {
 }
 
 #forside {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +127,59 @@ nav li:hover {
 .container {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.4);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    gap: 30px;
+
+}
+
+.container h2 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.boks {
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.boks img {
+    border-radius: 20px;
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.boks.tredelt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bilde {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
+}
+
+.tekstboks {
+    text-align: center;
+}
+
+.b1 {
+    padding-left: 30px;
 }
