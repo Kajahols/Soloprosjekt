@@ -20,3 +20,16 @@ main {
 main img {
     width: 350px;
 }
+
+#oppdrag {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: inherit;
+    border: 2px white solid;
+    color: white;
+}
