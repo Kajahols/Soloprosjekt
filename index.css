@@ -3,6 +3,7 @@
 :root {
     --red: rgb(211, 43, 43);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +21,7 @@ a {
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 h2 {
@@ -50,7 +51,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 100;
-    
+
 }
 
 header div {
@@ -62,6 +63,7 @@ header div {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 header img {
     width: 50px;
 }
@@ -106,11 +108,11 @@ nav li:hover {
     padding: 20px;
     border-radius: 30px;
     margin-left: -300px;
-    
+
 
 }
 
-.overskrift h1{
+.overskrift h1 {
     font-size: 80px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -123,7 +125,7 @@ nav li:hover {
 .overskrift p span {
     color: rgb(211, 43, 43);
     font-weight: 700;
-    
+
 }
 
 #norsk_natur {
@@ -148,7 +150,7 @@ nav li:hover {
 
 .container1 h2 {
     color: white;
-    
+
 }
 
 .boks {
@@ -180,7 +182,7 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .tekstboks {
@@ -273,4 +275,109 @@ nav li:hover {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#nasjonalparkene {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nasjonalparkene h2 {
+    align-self: flex-start;  /* holder overskriften til venstre */
+    padding-left: 60px;
+    margin-bottom: 10px;
+    align-self: center;       /* sentrerer med wrapperen */
+    width: 100%;
+    max-width: 1200px;        /* samme som wrapper */
+    box-sizing: border-box;
+}
+
+.slideshow-wrapper {
+    position: relative;
+    width: 80%;        /* maks bredde — juster etter smak */
+    align-self: center;
+
+    /* fade-effekt på sidene */
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%
+    );
+}
+
+.slideshow {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px 60px;       /* plass til fade på sidene */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    /* skjul standard scrollbar */
+    scrollbar-width: none;
+
+}
+
+.kort {
+    min-width: 280px;
+    /* viktig! hindrer kortene fra å krympe */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.kort:hover {
+    transform: scale(1.03);
+}
+
+.kort img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.kort h5 {
+    padding: 0 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.kort button {
+    width: 90%;
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 2px solid rgb(93, 153, 231) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gjør scrollbaren penere */
+.slideshow::-webkit-scrollbar {
+    height: 6px;
+}
+
+.slideshow::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.slideshow::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
 }
