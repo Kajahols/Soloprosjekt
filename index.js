@@ -30,3 +30,21 @@ crossElm.addEventListener("click", function () {
     headerElm.classList.remove("active")
     burgerElm.style.display = "block"
 })
+
+const bildeElm = document.getElementById("bilde")
+const seksjon = document.getElementById("tur")
+let venstre = 50
+let xfart = 3
+
+function flyttBilde() {
+    venstre += xfart
+    bildeElm.style.left = venstre + "px"
+    // (Ballongen er 100px i bredden)
+    if (venstre >= seksjon.offsetWidth - 100
+        || venstre <= 0) {
+        // Snu retning på farten:
+        xfart = -xfart
+    }
+
+}
+setInterval(flyttBilde, 10);

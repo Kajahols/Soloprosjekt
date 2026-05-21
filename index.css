@@ -1,6 +1,6 @@
 :root {
     --red: rgb(211, 43, 43);
-    --lyseblå:rgb(93, 153, 231);
+    --lyseblå: rgb(93, 153, 231);
     --gjennomsiktig: rgba(0, 0, 0, 0.4);
 }
 
@@ -109,7 +109,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+
 
 }
 
@@ -219,35 +219,34 @@ body {
 }
 
 #nasjonalparkene h2 {
-    align-self: flex-start;  
+    align-self: flex-start;
     padding-left: 60px;
     margin-bottom: 10px;
-    align-self: center;       /* sentrerer med wrapperen */
+    align-self: center;
+    /* sentrerer med wrapperen */
     width: 100%;
-    max-width: 1200px;        
+    max-width: 1200px;
     box-sizing: border-box;
 }
 
 .slideshow-wrapper {
     position: relative;
-    width: 80%;        
+    width: 80%;
     align-self: center;
 
     /* fade-effekt på sidene */
-    mask-image: linear-gradient(
-        to right,
-        transparent 0%,
-        black 8%,
-        black 92%,
-        transparent 100%
-    );
+    mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 8%,
+            black 92%,
+            transparent 100%);
 }
 
 .slideshow {
     display: flex;
     overflow-x: scroll;
     gap: 20px;
-    padding: 20px 60px;       
+    padding: 20px 60px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 
@@ -291,12 +290,12 @@ body {
     padding: 10px;
     background-color: inherit;
     border-radius: 5px;
-    border: 2px solid var(--lyseblå) ;
+    border: 2px solid var(--lyseblå);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .kort button:hover {
@@ -313,6 +312,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
+
 .slideshow::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -329,7 +329,7 @@ body {
     display: flex;
     padding-right: 100px;
     background-color: lightblue;
-    
+
 }
 
 .fjellregler {
@@ -361,7 +361,7 @@ body {
     height: 100vh;
     margin-left: -150px;
     line-height: 25px;
-    
+
 }
 
 .allmannregler div {
@@ -377,6 +377,19 @@ body {
     font-weight: 700;
 }
 
-@media (width < 1160px) {
-    
+#tur {
+    height: 40vh;
+    position: relative;  
+    overflow: hidden; 
 }
+
+#tur img {
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+
+}
+
+@media (width < 1160px) {}
