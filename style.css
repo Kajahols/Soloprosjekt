@@ -3,6 +3,7 @@
 :root {
     --red: rgb(211, 43, 43);
     --lyseblå:rgb(93, 153, 231);
+    --gjennomsiktig: rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -73,7 +74,7 @@ nav ul {
 }
 
 nav li {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--gjennomsiktig);
     padding: 10px;
     border-radius: 10px;
     color: white;
@@ -83,4 +84,45 @@ nav li {
 nav li:hover {
     transform: scale(1.1);
     text-decoration: underline;
+}
+
+.burger {
+    width: 30px;
+    display: none;
+}
+
+.kryss {
+    width: 30px;
+    display: none;
+}
+
+@media (width < 1160px) {
+    nav ul{
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .active nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 250px;
+        border-bottom-left-radius: 40px;
+        padding-right: 90px;
+    }
+
+    .active .kryss {
+        display: block;
+        z-index: 5
+    }
+
+
 }
