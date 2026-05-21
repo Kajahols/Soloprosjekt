@@ -4,6 +4,7 @@
     --red: rgb(211, 43, 43);
     --lyseblå:rgb(93, 153, 231);
     --gjennomsiktig: rgba(0, 0, 0, 0.4);
+    --grønn: rgb(30, 123, 30);
 }
 
 * {
@@ -96,6 +97,37 @@ nav li:hover {
     display: none;
 }
 
+footer {
+    min-height: 70vh;
+    background-color: var(--grønn);
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    gap: 30px;
+    color: white;
+
+}
+
+footer img {
+    width: 50px;
+}
+
+.fcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.fboks {
+    width: 30%;
+}
+
+.fboks h2 {
+    font-size: 20px;
+    
+    
+}
 @media (width < 1160px) {
     nav ul{
         display: none;
