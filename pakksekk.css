@@ -25,22 +25,6 @@ main img {
     display: none;
 }
 
-.pakk {
-    display: none;
-}
-
-.pakk input {
-    border-radius: 15px;
-    padding: 10px;
-    margin-right: 20px;
-}
-
-.pakk p {
-    border: 2px white solid;
-    border-radius: 15px;
-    padding: 10px;
-    width: 90px;
-}
 button {
     padding: 10px;
     width: 150px;
@@ -48,4 +32,37 @@ button {
     background-color: inherit;
     border: 2px white solid;
     color: white;
+}
+
+.input-rad {
+    display: none;
+    gap: 10px;
+}
+
+.input-rad input {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.input-rad p {
+    border: 2px white solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 90px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pakk {
+    padding: 10px;
+    color: white;
+    list-style: circle;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.end {
+    display: none;
 }
