@@ -98,8 +98,7 @@ nav li:hover {
 }
 
 footer {
-    min-height: 70vh;
-    background-color: var(--grønn);
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     padding: 100px;
@@ -125,8 +124,11 @@ footer img {
 
 .fboks h2 {
     font-size: 20px;
-    
-    
+     
+}
+
+.fboks ul {
+    line-height: 25px;
 }
 @media (width < 1160px) {
     nav ul{
