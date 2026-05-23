@@ -1,0 +1,54 @@
+:root {
+    --red: rgb(211, 43, 43);
+    --lyseblå:rgb(93, 153, 231);
+    --gjennomsiktig: rgba(0, 0, 0, 0.4);
+    --grønn: rgb(30, 123, 30);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+#forside {
+    height: 100vh;
+    position: relative;
+}
+
+#forside img {
+    width: 45%;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+
+}
+
+.forside {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 23px;
+    padding: 30px;
+    
+    position: absolute;
+    right: 100px;
+    top: 400px;
+    text-align: center;
+}
+
+
+#populær {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+#populær img {
+    width: 40%;
+}
