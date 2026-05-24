@@ -65,11 +65,14 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
+    gap: 140px;
     padding: 30px;
     width: 20%;
 }
 
+.tur {
+    position: relative;
+}
 .tur img {
     border-radius: 20px;
     height: 200px;
@@ -77,3 +80,19 @@ h1 {
     object-fit: cover;
 
 }
+
+.tur h3 {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.tur:hover {
+    transform: scale(1.1);
+}
+
+
