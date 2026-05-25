@@ -1,6 +1,6 @@
 :root {
     --red: rgb(211, 43, 43);
-    --lyseblå:rgb(93, 153, 231);
+    --lyseblå: rgb(93, 153, 231);
     --gjennomsiktig: rgba(0, 0, 0, 0.4);
     --grønn: rgb(30, 123, 30);
 }
@@ -9,6 +9,81 @@ h1 {
     text-transform: uppercase;
     font-size: 40px;
     letter-spacing: 2px;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header img {
+    width: 50px;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+
+}
+
+.active nav {
+    display: block;
+}
+
+.active .kryss {
+    display: block;
+    z-index: 5
+}
+
+nav li {
+    background-color: var(--gjennomsiktig);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.burger {
+    width: 30px;
+    display: block;
+}
+
+.kryss {
+    width: 30px;
+    display: none;
 }
 
 #forside {
@@ -32,7 +107,7 @@ h1 {
     gap: 30px;
     line-height: 23px;
     padding: 30px;
-    
+
     position: absolute;
     right: 100px;
     top: 400px;
@@ -46,7 +121,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    
+
 }
 
 .merker {
@@ -70,9 +145,10 @@ h1 {
     width: 20%;
 }
 
-.tur > div {
+.tur>div {
     position: relative;
 }
+
 .tur img {
     border-radius: 20px;
     height: 200px;
@@ -110,7 +186,7 @@ h1 {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    
+
 }
 
 #nærturområde_forside {
@@ -155,7 +231,7 @@ h1 {
     padding: 30px;
 }
 
-.info ul{
+.info ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
