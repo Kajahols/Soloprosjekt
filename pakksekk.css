@@ -5,6 +5,80 @@ body {
     background-position: center;
     background-size: cover;
 }
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header img {
+    width: 50px;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+
+}
+
+.active nav {
+    display: block;
+}
+
+.active .kryss {
+    display: block;
+    z-index: 5
+}
+
+nav li {
+    background-color: var(--gjennomsiktig);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.burger {
+    width: 30px;
+    display: block;
+}
+
+.kryss {
+    width: 30px;
+    display: none;
+}
 
 main {
     display: flex;
@@ -66,3 +140,4 @@ button {
 .end {
     display: none;
 }
+
