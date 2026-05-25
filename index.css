@@ -229,7 +229,7 @@ nav li:hover {
 
 .galleri1 {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 200px);
     width: 50%;
 }
@@ -414,7 +414,7 @@ nav li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1000px;
+    width: 70%;
     background-color: white;
     height: 100vh;
     margin-left: -150px;
@@ -490,4 +490,49 @@ footer {
     }
 
 
+
+}
+
+@media (width < 1000px) {
+    .overskrift {
+        margin: 0;
+    }
+
+    .container2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .billigtips {
+        width: 80%;
+    }
+
+    .galleri1 {
+        width: 80%;
+    }
+
+    #tips {
+        padding: 20px;
+    }
+
+    .allmannregler {
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+    #fjellvettregler {
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .allmannregler div {
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .boks {
+        flex-direction: column;
+    }
+   
 }
