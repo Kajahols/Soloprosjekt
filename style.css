@@ -73,3 +73,18 @@ footer img {
 .fboks ul {
     line-height: 25px;
 }
+
+@media (width < 1000px) {
+    footer {
+      
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .fcontainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+

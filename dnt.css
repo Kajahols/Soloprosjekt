@@ -145,6 +145,13 @@ nav li:hover {
     width: 20%;
 }
 
+.tur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .tur>div {
     position: relative;
 }
@@ -177,6 +184,7 @@ nav li:hover {
     padding-bottom: 10px;
     border-bottom: 2px solid black;
     display: none;
+    width: 230px;
 }
 
 #nærtur {
@@ -260,4 +268,71 @@ nav li:hover {
 
 footer {
     color: black;
+}
+
+@media (width < 1000px) {
+
+    #forside {
+        background-image: url(media/kart3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #forside img {
+        display: none;
+    }
+
+    .forside {
+        width: 100%;
+        position: static;
+        align-items: center;
+    }
+
+    #forside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .populæreturer {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #nærturområde {
+        padding-inline: 50px;
+    }
+
+    footer {
+        padding-inline: 30px;
+        padding: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (width <670px) {
+    #nærturområde_forside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (width < 600px) {
+    #forside h1 {
+        line-height: 40px;
+    }
 }
