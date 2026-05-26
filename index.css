@@ -281,7 +281,6 @@ nav li:hover {
     padding-left: 60px;
     margin-bottom: 10px;
     align-self: center;
-    /* sentrerer med wrapperen */
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
@@ -292,7 +291,6 @@ nav li:hover {
     width: 80%;
     align-self: center;
 
-    /* fade-effekt på sidene */
     mask-image: linear-gradient(to right,
             transparent 0%,
             black 8%,
